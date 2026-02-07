@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<script defer>
+		const input = document.querySelector("input");
+		const nama = document.querySelector("#nama");
+		input.addEventListener("input", () => {
+			nama.textContent = input.value;
+		});
+	</script>
+	<body>
+		<div>
+			<input type="text" value="Sipon" />
+		</div>
+
+		<div>Nama saya adalah <span id="nama"></span></div>
+	</body>
+</html>
